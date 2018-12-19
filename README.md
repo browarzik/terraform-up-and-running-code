@@ -1,46 +1,31 @@
-# Terraform "Hello, World" example
+# Terraform: Up & Running Code
 
-This folder contains a "Hello, World" example of a [Terraform](https://www.terraform.io/) template. The template 
-deploys a single server in an [Amazon Web Services (AWS) account](http://aws.amazon.com/). 
+This repo contains the code samples for the book *[Terraform: Up and Running](http://www.terraformupandrunning.com)* by 
+[Yevgeniy Brikman](http://www.ybrikman.com).
 
-For more info, please see the preface of *[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
-## Pre-requisites
 
-* You must have [Terraform](https://www.terraform.io/) installed on your computer. 
-* You must have an [Amazon Web Services (AWS) account](http://aws.amazon.com/).
-
-Please note that this code was written for Terraform 0.8.x.
 
 ## Quick start
 
-**Please note that this example will deploy real resources into your AWS account. We have made every effort to ensure 
-all the resources qualify for the [AWS Free Tier](https://aws.amazon.com/free/), but we are not responsible for any
-charges you may incur.** 
+All the code is in the [code](/code) folder. It is organized by language (terraform, bash, ruby, etc) and within each
+language, by chapter. Since this code comes from a book about Terraform, the vast majority of the code consists of
+Terraform examples in the [code/terraform folder](/code/terraform). 
 
-Configure your [AWS access 
-keys](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) as 
-environment variables:
+For instructions on running the code, please consult the README in each folder, and, of course, the 
+*[Terraform: Up and Running](http://www.terraformupandrunning.com)* book. 
 
-```
-export AWS_ACCESS_KEY_ID=(your access key id)
-export AWS_SECRET_ACCESS_KEY=(your secret access key)
-```
 
-Validate the templates:
 
-```
-terraform plan
-```
+## More examples
 
-Deploy the code:
+The example code in *Terraform: Up and Running* are mostly for Amazon Web Services (AWS). There is a project underway
+to translate these examples to their equivalents on other cloud providers, such as Google Cloud and Azure, here:
+https://github.com/mjuenema/Terraform-Up-and-Running-Code-Samples-Translated/. 
 
-```
-terraform apply
-```
 
-Clean up when you're done:
 
-```
-terraform destroy
-```
+
+## License
+
+This code is released under the MIT License. See LICENSE.txt.
